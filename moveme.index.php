@@ -10,11 +10,11 @@
             <h1>Localhost</h1>
             <div id="search">
                 <p>Search:</p>
-                <input ng-model="searchText" id="searchbox" />
+                <input ng-model="searchText" id="searchbox" autofocus="autofocus" />
             </div>
             <div id="sites">
                 <div class="site" ng-repeat="site in data | filter:searchText">
-                    <h3><a href="{{site}}">{{site}}</a></h3>
+                    <h3><a href="{{site}}" tabindex="0">{{site}}</a></h3>
                 </div>
             </div>
         </div>
